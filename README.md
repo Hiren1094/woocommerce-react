@@ -1,6 +1,6 @@
 # WooCommerce With React JS
 
-This demo for "Simple Product" with login user so please check below step configure accordingly.
+This demo for "Simple Product" with login user so please check below step and configure accordingly.
 
 You can get all required plugins [here](https://github.com/Hiren1094/Woocommerce-React-JS/tree/main/WordPress).
 
