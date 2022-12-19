@@ -1,0 +1,14 @@
+# Codeception Test Suite Configuration
+#
+# Suite for functional tests
+# Emulate web requests and make WordPress process them
+
+actor: FunctionalTester
+modules:
+    enabled:
+      - \Helper\Functional
+      - REST
+      - WPDb
+      - WPBrowser
+      - Asserts
+      - WPLoader

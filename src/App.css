@@ -1,0 +1,167 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #252527;
+  background: #fd746c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ff9068, #fd746c);
+  background: linear-gradient(to right, #ff9068, #fd746c);
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+a:active,
+a:hover {
+  color: inherit;
+}
+
+code {
+  border: 1px solid red;
+}
+
+.page-container {
+  margin: 60px auto;
+  padding: 0 40px;
+  width: 76%;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.posts-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.post-card {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  margin-right: 14px;
+}
+
+@media screen and (min-width: 500px) {
+  .post-card {
+    width: 48%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .post-card {
+    width: 32%;
+  }
+}
+
+.post-card img {
+  height: auto;
+  max-height: 300px;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.post-card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.post-card h3 {
+  font-size: 1.4rem;
+  margin: 0 0 40px;
+  word-wrap: break-word;
+}
+
+.post-card p {
+  margin: 0;
+  padding: 0;
+}
+
+.post-card p + p {
+  margin-top: 0.25rem;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.post-content img {
+  height: auto;
+  max-width: 100%;
+}
+
+.categories-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button.update-cart:disabled{
+  opacity: 1;
+  cursor: not-allowed
+}
+button.update-cart{
+
+  cursor: pointer;
+  background-color: rgb(253, 116, 108)
+}
+button.cart-remove-item{
+  cursor: pointer;
+  background-color: rgb(253, 116, 108)
+}
+.woo-next-checkout-form .billing{width: 100%;}
+.woo-next-checkout-form .billing td{padding: 5px;}
+.woo-next-checkout-form input[type='text']{height: 37px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 53%;
+}
+.woo-next-checkout-form input[type='email']{height: 37px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 53%;
+}
+.woo-next-checkout-form select {
+    height: 50%;
+    padding: 14px 0px 11px 0px;
+    width: 53%;
+    border-radius: 5px;
+}
+.woo-next-checkout-form textarea{
+    width: 54%;
+    border-radius: 4px;
+    height: 104px;
+}
+.your-order{
+  width: 60%;
+  margin-bottom: 70px;
+}
+.your-order th{
+      text-align: left;
+}
+.woo-next-payment-input-container input{
+  cursor: pointer;
+}
+.woo-next-checkout-form select{
+  cursor: pointer;
+}
+.page-item{display: inline;margin:10px;}
