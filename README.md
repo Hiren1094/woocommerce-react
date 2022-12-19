@@ -2,7 +2,7 @@
 
 This demo for "Simple Product" with login user so please check below step configure accordingly.
 
-You can get all required plugins [here](https://github.com/Hiren1094/WordPress-CI-CD/tree/main/wordpress).
+You can get all required plugins [here](https://github.com/Hiren1094/Woocommerce-React-JS/tree/main/WordPress).
 
 ## Getting Started
 
@@ -39,4 +39,4 @@ add_filter( 'graphql_jwt_auth_expire', 'custom_jwt_expiration', 10 );
 ```
 npm install
 npm start
-``
+```
