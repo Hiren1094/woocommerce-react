@@ -34,9 +34,15 @@ function custom_jwt_expiration( $expiration ) {
 add_filter( 'graphql_jwt_auth_expire', 'custom_jwt_expiration', 10 );
 ```
 
-* Clone main branch and run below command for install packages & run project
+* Clone main branch and run below command for install packages & run project.
 
 ```
 npm install
 npm start
 ```
+
+* Create ".env.development.local" file in root & add graphql url with same name of variable.
+
+```
+REACT_APP_GRAPHQL_URL = http://localhost/graphql
+``` 
