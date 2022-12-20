@@ -2,7 +2,7 @@
 
 This demo for "Simple Product" with login user so please check below step and configure accordingly.
 
-You can get all required plugins [here](https://github.com/Hiren1094/Woocommerce-React-JS/tree/main/WordPress).
+You can get all required plugins [here](https://github.com/Hiren1094/woocommerce-react/tree/main/WordPress).
 
 ## Getting Started
 
