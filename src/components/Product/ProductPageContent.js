@@ -7,7 +7,7 @@ import { v4 } from "uuid";
 const formatDate = (date) => new Date(date).toLocaleDateString();
 
 export default function ProductPageContent({ product }) {
-    const { date, name, content, featuredImage, onSale, salePrice, price, regularPrice, databaseId } = product;
+    const { date, name, content, featuredImage, onSale, salePrice, regularPrice, databaseId } = product;
     const [qnty, setQnty] = useState(1);
     const [showViewCart, setShowViewCart] = useState(false);
     
@@ -20,7 +20,7 @@ export default function ProductPageContent({ product }) {
 
     const [
         addToCart,
-        { data: addToCartRes,  loading: addToCartLoading, error: addToCartError },
+        { loading: addToCartLoading, error: addToCartError },
     ] = useMutation(ADD_TO_CART, {
         variables: {
             input: productQtyInput,

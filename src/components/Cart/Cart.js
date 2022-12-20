@@ -3,7 +3,7 @@ import { isEmpty } from 'lodash';
 import GET_CART from "../../query/get-cart";
 import UPDATE_CART from "../../mutations/update-cart";
 import REMOVE_CART from "../../mutations/remove-cart";
-import { gql, useQuery, useMutation } from "@apollo/client";
+import { useQuery, useMutation } from "@apollo/client";
 import { Link } from "react-router-dom";
 import { CartItem } from "./CartItem";
 import { v4 } from "uuid";
@@ -83,7 +83,7 @@ const Cart = () => {
         return formattedCart;
     };
     // Get Cart Data.
-    const { loading: carDetails, error, data, refetch } = useQuery(GET_CART, {
+    const { loading: carDetails, error, refetch } = useQuery(GET_CART, {
         fetchPolicy: "no-cache",
         onCompleted: (data) => {
             // Update cart in the localStorage.

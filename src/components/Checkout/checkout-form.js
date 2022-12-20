@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Billing from "./billing";
 import { v4 } from "uuid";
 import { useMutation, useQuery } from "@apollo/client";
@@ -33,16 +33,16 @@ const CheckoutForm = () => {
 
     // Use this for testing purposes, so you dont have to fill the checkout form over an over again.
     /* const initialState = {
-      firstName: "Hiren",
-      lastName: "Sanja",
+      firstName: "Test",
+      lastName: "Test",
       address1: "109 Hills Road Valley",
       address2: "Station Road",
-      city: "Pune",
-      state: "Maharastra",
+      city: "Ahmedabad",
+      state: "Gujarat",
       country: "IN",
-      postcode: "400298",
-      phone: "9959338989",
-      email: "hiren.sanja@creolestudios.com",
+      postcode: "382330",
+      phone: "1234567890",
+      email: "test@demo.com",
       company: "Tech",
       createAccount: false,
         username: '',
@@ -172,7 +172,7 @@ const CheckoutForm = () => {
         return checkoutData;
     }
     // Get Cart Data.
-    const { loading: carDetails, error, data, refetch } = useQuery(GET_CART, {
+    const { loading: carDetails, refetch } = useQuery(GET_CART, {
         notifyOnNetworkStatusChange: true,
         fetchPolicy: "no-cache",
         onCompleted: (data) => {

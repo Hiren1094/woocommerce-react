@@ -7,7 +7,7 @@ const PaymentModes = ({ input, handleOnChange }) => {
 
     const [payments, setPayment] = useState(null);
     // Get payment method.
-    const { loading, error, data, refetch } = useQuery(GET_PAYMENT_GATEWAY, {
+    const { loading } = useQuery(GET_PAYMENT_GATEWAY, {
         fetchPolicy: "no-cache",
         onCompleted: (data) => {
 
@@ -24,7 +24,7 @@ const PaymentModes = ({ input, handleOnChange }) => {
         <div className="mt-3">
             <Error errors={input.errors} fieldName={'paymentMethod'} />
             { payments && payments.map((payment) => (
-                <div className="form-check woo-next-payment-input-container mt-2">
+                <div className="form-check woo-next-payment-input-container mt-2" key={`${payment.id}`}>
                     <label className="form-check-label">
                         <input onChange={handleOnChange} value={`${payment.id}`} className="form-check-input" name="paymentMethod" type="radio" />
                         <span className="woo-next-payment-content">{`${payment.title}`}</span>

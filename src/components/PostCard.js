@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const formatDate = (date) => new Date(date).toLocaleDateString();
-
 export default function PostCard({ post }) {
     const {
         title,
@@ -14,6 +12,8 @@ export default function PostCard({ post }) {
         featuredImage
     } = post;
 
+    const formatDate = (date) => new Date(date).toLocaleDateString();
+    
     return (
         <div className="post-card">
             {featuredImage ? (

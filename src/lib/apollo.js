@@ -1,8 +1,7 @@
 import { ApolloClient, createHttpLink, InMemoryCache } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
-
 const httpLink = createHttpLink({
-    uri: 'http://localhost/gatsby/graphql',
+    uri: process.env.REACT_APP_GRAPHQL_URL,
 });
 
 const authLink = setContext((_, { headers }) => {
